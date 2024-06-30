@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background-color: #dc2626;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    background-color: #dc2626;
+    color: #fef2f2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+}
+
+header .container form {
+    width: 80%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+header .container form input {
+    background-color:#fef2f2;
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+header .container input {
+    padding: 8px;
+}
+
+header .container button {
+    height: 40px;
+    width: 8%;
+    background-color: #fef2f2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #fef2f2;
+    margin-bottom: 56px;
+}
+
+.submenu {
+    display: none;
+    border: 1px solid #fef2f2;
+    border-top: none;
+    background-color: #fef2f2;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.menu > li {
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    padding: 4px 20px;
+    margin-top: 8px;
+    border-top: 4px solid transparent;
+    position: relative;
+    color: black;
+    font-weight: bold;    
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.menu li:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.conteudo img {
+    max-width: 100%;
+}
+
+.sobre {
+    padding: 0 20px;
+}
+
+.sobre h2 {
+    margin-bottom: 50px;
+    border-bottom: 2px solid black;
+    font-weight: 400;
+}
+
+.sobre h3 {
+    color: purple;
+    font-weight: 300;
+}
+
+aside {
+    width: 100%;
+    margin-top: 40px;
+}
+
+aside h2 {
+    font-weight: 400;
+    border-bottom: 2px solid black;
+}
+
+.calcados {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    justify-content: space-between;
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-top: 40px;
+}
+
+.calcados img {
+    width: 100%;
+}
+
+.calcados h2,
+.calcados h4 {
+    font-weight: 400;
+}
+
+.calcados button {
+    width: 98%;
+}
