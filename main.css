@@ -157,8 +157,6 @@ aside h2 {
     border-bottom: 2px solid black;
 }
 
-.container .produtos {}
-
 .calcados {
     background-color: ;
     display: grid;
@@ -203,6 +201,7 @@ aside h2 {
     color: #Fff;
     font-weight: bold;
     margin-bottom: 5px;
+    cursor: pointer ;
 }
 
 .calcados button:hover {
@@ -237,3 +236,101 @@ footer .bottom p a {
     text-decoration: none;
     color: #f9f9f9;
 }
+
+/* DISPLAY CELULAR */
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    header .container form input {
+        max-width: 60%;
+    }
+
+    header .container button {
+        width: 30%;
+    }
+
+    .calcados {
+        display: inline;
+    }
+
+    .tenis {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .tenis img,
+    .tenis h2,
+    .tenis h4,
+    .tenis button {
+        padding: 5px 0;
+    }
+
+    .meio {
+        display: block;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+        background-color: #dc2626;
+        height: 100%;
+    }
+}
+
+/* DISPLAY TABLET */
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .container form input {
+        max-width: 70%;
+    }
+
+    .container form button {
+        width: 20%;
+    }
+
+    .container .produtos {
+        display: grid;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .meio {
+        display: grid;
+    }
+
+    .calcados {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-row: 1fr 1fr;
+    }
+
+    .tenis {
+        position: relative;
+    }
+
+    .tenis img,
+    .tenis h2,
+    .tenis h4,
+    .tenis button {
+        padding: 5px 0;
+    }
+
+    .tenis button {
+        justify-self: start;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #dc2626;
+        margin-top: 70%;
+    }
+} 
